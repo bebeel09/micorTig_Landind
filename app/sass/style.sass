@@ -1,120 +1,136 @@
 @import "common"
-
-*
-    margin: 0px
-    padding: 0px
-    font-family: "Verdana",sans-serif
-    
-
-img
-    width: 100%
-    
+::placeholder
+  color: inherit
 body
-    background-color: #d8381e 
-
-
-    
-.header
-    background-color: #494949
-    padding: 10px
-          
-
-.navigation
-    position: relative
-    &__menu
-        ul
-            list-style-type: none
-            li 
-                display: inline-block
-                a 
-                    display: block
-                    font-size: 24px
-                    height: 40px
-                    text-align: center
-
-.poster
-    color: #fafafa
-    &__description
-        &__title
-            font-size: 36px
-            text-align: center
-            
-.description
-    &__text
-        padding-top: 15px
-        font-size: 24px
-        text-align: center
-
-.poster-2
-    background-color: #f0f0ef
-    color: #000000
-    margin-top: 15px
-    &__title
-        color: #606062
-        font-size: 36px
-        text-align: center
-    &__card
-        &__description
-            color: #2e2d2d
-            margin: 20px
-            padding: 0px
-            p
-                font-size: 20px
-
-.qoute
+  font-family: 'Segoe UI','Helvetica Neue', Roboto,Arial,sans-serif
+  font-size: 18px
+  color: #010101
+// img
+//   width: 100%
+.pad-top-40
+  padding-top: 43px
+.pad-bot-40
+  padding-bottom: 43px
+.headline
+  &-span
+    display: block
+.headline-typography-super
+  font-size: 60px
+  line-height: 1.1
+  font-weight: 600
+  letter-spacing: -.025em
+.headline-typography-elevated
+  font-size: 60px
+  line-height: 1.0625
+  font-weight: 600
+  letter-spacing: -.009em
+.intro
+  margin-top: 40px
+  margin-bottom: 20px
+  &-typography-super
+    font-size: 25px
+    line-height: 1.125
+    font-weight: 600
+    letter-spacing: .004em
+.page
+  position: relative
+  // background-color: #110e21
+.body__wrapper
+  overflow: hidden
+.section
+  position: relative
+  overflow: hidden
+  &-hero
+    background-color: #d8381e
     color: #ffffff
-    background-color: #3d3e43
-    font-family: "Antenna Medium"
-    &__text
-        font-size: 42px
+  &.pad-top
+    padding-top: 140px
+  &.pad-bot
+    padding-bottom: 140px
+  &-headline
+    color: #b9b9b9
+  &-subheadline
+    font-size: 55px
+  &-power
+    background: #efefef
+    color: #010101
+  &-video
+    .hero-films-container
+      margin-left: auto
+      margin-right: auto
+      max-width: 1140px
+      margin-top: 100px
+      margin-bottom: 0
+      .rock
+        background-repeat: no-repeat
+        background-image: url('../img/1556282356785.jpg')
+        background-size: cover
+      .live
+        background-repeat: no-repeat
+        background-image: url('../img/1556282532769.jpg')
+        background-size: cover
+      .icon-wrapper
         text-align: center
-        p
-            padding: 15px
-        &__author
-            font-size: 16px
-            font-style: italic
-
-.interface
-    background-color: #f0f0ef
-    &__description
-        font-size: 20px
-
-.haracteristic
-    background-color: #ffffff 
-    margin: 0px 
-
-.scheme
-    background-color: #f0f0ef
-    p
-        margin: 30px
-        font-size: 26px
-
-.accu
-    background-color: #e3e3e0
-    &__title
-        color: #000000
-        font-size: 25px
-        padding-top: 40px
-    &__description
-        &__title
-            font-size: 26px
-            color: #3d3e43
-            margin-bottom:  20px
-        &__text
-            font-size: 17px
-            
-
-footer
-    height: 572px
-    background-color: #494949
-
-.footer__contact-information
-    background-color: grey
-    height: 80%
-
-.footer__corp
-    height: 20%
-
-.poster
-    &__img
-        
+        color: #ffffff
+      .center-items
+        display: flex
+        box-align: center
+        justify-content: center
+        align-items: center
+      .block
+        display: block
+      .link-wrapper:hover
+        text-decoration: none
+.thumbnail
+  float: left
+  width: 50%
+  height: 330px
+  overflow: hidden
+  position: relative
+  display: inline-block
+  vertical-align: top
+  z-index: 1
+  &-scrim
+    position: absolute
+    height: 100%
+    width: 100%
+    background: rgba(0,0,0,.15)
+    transition: 500ms background-color cubic-bezier(0.4, 0, 0.6, 1)
+  &:hover
+    .thumbnail-scrim
+      background: rgba(0,0,0,0.35)
+.typography-headline
+  font-size: 48px
+  line-height: 1.08365
+  font-weight: 600
+  letter-spacing: -.003em
+.typography-label
+    font-size: 24px
+    line-height: 1.16667
+    font-weight: 600
+    letter-spacing: .009em
+.links-inline
+  margin-top: 24px
+  list-style: none
+  padding: 0
+  li
+    margin: 0 0.8em
+    display: inline
+    &:first-child
+      margin-left: 0
+.icon-copy
+  i
+    vertical-align: middle
+    margin-top: -1px
+// .qoute
+//     color: #ffffff
+//     background-color: #3d3e43
+//     font-family: "Antenna Medium"
+//     &__text
+//         font-size: 42px
+//         text-align: center
+//         p
+//             padding: 15px
+//         &__author
+//             font-size: 16px
+//             font-style: italic
