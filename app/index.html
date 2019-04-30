@@ -16,7 +16,7 @@
         <div class="block-one">
             <div class="siteWidth container">
                 <div class="row">
-                    <div class="slogan col">
+                    <div class="slogan col d-none d-md-block">
                         Сварочное оборудование
                     </div>
                     <div class="header-contact col">
@@ -31,8 +31,8 @@
         
         <div class="block-second hide-header">
             <div class="scroll-header default" style="display: block;">
-                <div class="siteWidth container">
-                    <div class="row align-items-center">
+                <div class="siteWidth">
+                    <div class="row align-items-center justify-content-between">
                         <div class="header-logo col">
                             <div class="logo">
                                 <img src="http://shtorm-lorch.ru/assets/templates/lorch/img/logo.png" alt="#">
@@ -40,6 +40,7 @@
                         </div>
                         <div class="header-menu-col col">
                             <div class="box-main-menu">
+                            	<a href="javascript:void(0)" title="" class="close-menu d-md-none" rel="nofollow">X</a>
                                 <nav class="ankor-link">
                                     <ul class="main-menu">
                                         <li class="">
@@ -60,6 +61,7 @@
                                     </ul>
                                 </nav>
                             </div>
+                            <a class="button-menu d-md-none" rel="nofollow" href="#"><div class="menu-fader">меню</div><span></span></a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +133,7 @@
 				<div class="subsection subsection-wrapper">
 					<div class="container section-content">
 						<div class="row justify-content-center">
-							<div class="col-8">
+							<div class="col-sm-12 col-12 col-md-10 col-lg-8">
 								<img src="img/allin2.png" alt="" style="width: 100%">
 							</div>
 							<!-- <div class="col-6 text-justify pad-top-40">
@@ -154,23 +156,23 @@
 				<div class="subsection subsection-wrapper pad-bot-40">
 					<div class="container section-content">
 						<div class="row">
-							<div class="col-6 text-justify pad-top-40 ">
+							<div class="col-12 col-sm-6 text-justify pad-top-40 ">
 								<p>Позволяет подключать устройство к стандартной однофазной сети электропитания на 115-230 В, генератору или аккумуляторной батарее MobilePower от Lorch.</p><p> Эта универсальность оказывается особенно полезной при работе в удаленных местах, поскольку устраняет необходимость в поиске сетевого подключения.</p>
 								<div class="row">
-									<div class="col-6 text-left">
+									<div class="col-12 col-md-6 text-left">
 										<img src="img/2869549590b5d896458eb61ed0da047c.png" alt="">
 										<p><strong>Бесконтактный  высокочастотный поджиг</strong><br>
 										Поджиг TIG осуществляется бесконтактно высокочастотными импульсами нажатием на клавишу,
 										поэтому вольфрамовый электрод не прикасается к заготовке. Таким образом, в шов не попадают вольфрамовые включения, а электрод избегает вредных воздействий.</p>
 									</div>
-									<div class="col-6 text-left">
+									<div class="col-12 col-md-6 text-left">
 										<img src="img/ceb7dbce1d3492eaaa34a420a3169008.png" alt="">
 										<p><strong>ContacTIG</strong><br>
 										Кроме того, для эксплуатации на участках или с инструментами повышенной высокочастотной чувствительности поджиг можно переключать на ContacTIG (контактный поджиг).</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-3 offset-3">
+							<div class="col-5 col-sm-4 offset-sm-2 offset-4">
 								<img src="img/123123.png" alt="" style="width: 100%">
 							</div>
 						</div>
@@ -194,27 +196,27 @@
 						</h2>
 					</div>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-md-4">
 							<strong>+ Графический дисплей с выбором языка и памятью для сохранения сварочных программ.</strong>
 							<p>Интуитивное управление аппаратом благодаря чётко структурированному пользовательскому интерфейсу.</p>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
 							<strong>+ Импульсный и короткоимпульсный режим.</strong>
 							<p>Встроенная импульсная функция до 5 кГц особенно подходит для обработки малых толщин.</p>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
 							<strong>+ Дистанционное управление с горелки.</strong>
 							<p>Благодаря опции в виде горелки Powermaster все важные сварочные параметры всегда будут у Вас под рукой и под контроле.</p>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
 							<strong>+ Надёжность и защита от выхода из строя при падении с высоты до 80 см.</strong>
 							<p>Благодаря специальной защите аппарат продолжает работать даже после падения с высоты 80 см.</p>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
 							<strong>+ Безопасность.</strong>
 							<p>Благодаря IP23 и знаку S оптимально подходит для монтажных работ.</p>
 						</div>
-						<div class="col-4">
+						<div class="col-md-4">
 							<strong>+ Энергетическая эффективность.</strong>
 							<p>Благодаря самой современной силовой электронике и функции режима ожидания аппарат MicorTIG имеет высокий КПД и незначительное энергопотребление.</p>
 						</div>
@@ -290,7 +292,9 @@
 							</li>
 						</ul>
 					</div>
-					<img src="img/micortig.png" alt="">
+					<div class="col-12">
+						<img src="img/micortig.png" alt="" class="col-12 col-md-7">
+					</div>
 				</div>
 			</section>
 			<!-- 
@@ -309,7 +313,61 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+	
+$(document).ready(function() {
+    var e = $(".scroll-header");
+    $(window).scroll(function() {
+        $(this).scrollTop() > 50 && e.hasClass("default") ? e.fadeOut("fast", function() {
+            $(this).removeClass("default").addClass("sticky transbg").slideDown(400)
+        }) : $(this).scrollTop() <= 50 && e.hasClass("sticky") && e.fadeOut("fast", function() {
+            $(this).removeClass("sticky transbg").addClass("default").slideDown(400)
+        })
+    }), $("#dilers").on("click", function() {
+        var e = $("#anchor_5");
+        e.hasClass("active") || e.find(".button-show").trigger("click")
+    }), $(".hide-block").hide(), $a = $(".cuption-product"), $a.on("click", function(e) {
+        e.preventDefault(), $a.not(this).next().slideUp(700), $(this).next().slideToggle(700), $(this).toggleClass("qus-open"), $a.not(this).removeClass("qus-open")
+    }), $(".button-menu").click(function(e) {
+        $(".box-main-menu").toggleClass("open"), e.stopPropagation(), e.preventDefault()
+    }), $(".close-menu").click(function() {
+        $(".box-main-menu").removeClass("open")
+    }), $("body").click(function(e) {
+        $(".box-main-menu").removeClass("open")
+    });
+    var a, t = $(".main-menu"),
+        s = t.outerHeight() + 15,
+        i = t.find("a"),
+        o = i.map(function() {
+            var e = $($(this).attr("href"));
+            if (e.length) return e
+        });
+    i.click(function(e) {
+        var a = $(this).attr("href"),
+            t = "#" === a ? 0 : $(a).offset().top - s + 1;
+        $("html, body").stop().animate({
+            scrollTop: t
+        }, 300), e.preventDefault()
+    }), $(window).scroll(function() {
+        var e = $(this).scrollTop() + s,
+            t = o.map(function() {
+                if ($(this).offset().top < e) return this
+            });
+        t = t[t.length - 1];
+        var l = t && t.length ? t[0].id : "";
+        a !== l && (a = l, i.parent().removeClass("active").end().filter("[href='#" + l + "']").parent().addClass("active"))
+    }), $(function() {
+        $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+            $(this).addClass("active").siblings().removeClass("active").closest("div.tabs").find("div.tabs__content").removeClass("active").eq($(this).index()).addClass("active")
+        })
+    }), $(".blockContacts .button-open").click(function() {
+        $(".blockContacts .hide-block").slideDown(700), $(".blockContacts .block-button-open").addClass("active")
+    }), $(".blockContacts .button-close").click(function() {
+        $(".blockContacts .hide-block").slideToggle(400), $(".blockContacts .block-button-open").toggleClass("active")
+    });
+});
 
+</script>
 
 </body>
 
