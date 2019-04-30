@@ -8914,6 +8914,9 @@ body {
       display: block; }
     .section-video .hero-films-container .link-wrapper:hover {
       text-decoration: none; }
+    .section-video .hero-films-container > span {
+      margin-left: 0px !important;
+      display: none !important; }
 
 .thumbnail {
   float: left;
@@ -8960,3 +8963,6 @@ body {
 .icon-copy i {
   vertical-align: middle;
   margin-top: -1px; }
+
+a[savefrom_lm_is_link="1"] {
+  display: none !important; }
