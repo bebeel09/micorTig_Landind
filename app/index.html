@@ -13,61 +13,61 @@
 <body class="page">
 	<div class="body__wrapper">
 		<header class="header">
-        <div class="block-one">
-            <div class="siteWidth container">
-                <div class="row">
-                    <div class="slogan col d-none d-md-block">
-                        Сварочное оборудование
-                    </div>
-                    <div class="header-contact col">
-                        <div class="block-contact">
-                            <a class="link-phone" href="tel:+73433792975" rel="nofollow">+7 (343) 379 29 75</a>
-                            <a class="link-email" href="mailto:office@shtorm-lorch.ru" rel="nofollow">office@shtorm-lorch.ru</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="block-second hide-header">
-            <div class="scroll-header default" style="display: block;">
-                <div class="siteWidth">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="header-logo col">
-                            <div class="logo">
-                                <img src="http://shtorm-lorch.ru/assets/templates/lorch/img/logo.png" alt="#">
-                            </div>
-                        </div>
-                        <div class="header-menu-col col">
-                            <div class="box-main-menu">
-                            	<a href="javascript:void(0)" title="" class="close-menu d-md-none" rel="nofollow">X</a>
-                                <nav class="ankor-link">
-                                    <ul class="main-menu">
-                                        <li class="">
-                                            <a href="#anchor_1">О компании</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="#anchor_2">каталог</a>
-                                        </li>
-                                        <li>
-                                            <a href="#anchor_3">Новости</a>
-                                        </li>
-                                        <li>
-                                            <a href="#anchor_4">Контакты</a>
-                                        </li>
-                                        <li>
-                                            <a href="#anchor_5">Дилеры</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <a class="button-menu d-md-none" rel="nofollow" href="#"><div class="menu-fader">меню</div><span></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+		<div class="block-one">
+			<div class="siteWidth container">
+				<div class="row">
+					<div class="slogan col d-none d-md-block">
+						Сварочное оборудование
+					</div>
+					<div class="header-contact col">
+						<div class="block-contact">
+							<a class="link-phone" href="tel:+73433792975" rel="nofollow">+7 (343) 379 29 75</a>
+							<a class="link-email" href="mailto:office@shtorm-lorch.ru" rel="nofollow">office@shtorm-lorch.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="block-second hide-header">
+			<div class="scroll-header default" style="display: block;">
+				<div class="siteWidth">
+					<div class="row align-items-center justify-content-between">
+						<div class="header-logo col">
+							<div class="logo">
+								<img src="http://shtorm-lorch.ru/assets/templates/lorch/img/logo.png" alt="#">
+							</div>
+						</div>
+						<div class="header-menu-col col">
+							<div class="box-main-menu">
+								<a href="javascript:void(0)" title="" class="close-menu d-md-none" rel="nofollow">X</a>
+								<nav class="ankor-link">
+									<ul class="main-menu">
+										<li class="">
+											<a href="#anchor_1">О компании</a>
+										</li>
+										<li class="">
+											<a href="#anchor_2">каталог</a>
+										</li>
+										<li>
+											<a href="#anchor_3">Новости</a>
+										</li>
+										<li>
+											<a href="#anchor_4">Контакты</a>
+										</li>
+										<li>
+											<a href="#anchor_5">Дилеры</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<a class="button-menu d-md-none" rel="nofollow" href="#"><div class="menu-fader">меню</div><span></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 		<!-- <header class="header index-header" style="height: auto; background: #494949">
 			<div class="container">
 				<div class="col-3" style="background: #fff">
@@ -98,7 +98,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section section-video">
+			<!-- <section class="section section-video">
 				<div class="hero-films-container selfclear">
 					<a data-fancybox href="https://youtu.be/4KP4w99gub0" class="thumbnail link-wrapper rock">
 						<span class="icon-wrapper thumbnail-scrim center-items">
@@ -117,7 +117,7 @@
 						</span>
 					</a>
 				</div>
-			</section>
+			</section> -->
 			<section class="section section-allin pad-top pad-bot">
 				<div class="container section-content">
 					<div class="headline-wrapper">
@@ -279,7 +279,7 @@
 						</h2>
 						<ul class="links-inline">
 							<li>
-								<a href="/" class="icon-wrapper">
+								<a href="#modal" class="icon-wrapper">
 									<span class="icon-copy">Оформить предзаказ сейчас <i class="fas fa-chevron-right"></i></span>
 									<span class="icon icon-after more"></span>
 								</a>
@@ -308,64 +308,113 @@
 		</main>
 	</div>
 	<!-- <div class="helper" style="height: 800px; display: block"></div> -->
+	<div class="remodal" data-remodal-id="modal">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h3>Предзаказ MicorTig</h3>
+		
+		Ожидается 9 мая<br>
+		
+		<div class="modal-message"></div>
+
+		<form id="main-form" name="call-form" class="call-form" novalidate="novalidate">
+			<div class="block-input">
+				<input type="text" name="name" placeholder="Имя">
+			</div>
+			<div class="block-input">
+				<input type="text" class="user-phone" name="phone" placeholder="Телефон" required="" aria-required="true">
+			</div>
+			<div class="block-input">
+				<input type="text" class="user-mail" name="email" placeholder="Email" required="" aria-required="true">
+			</div>
+			<div class="block-processing">
+				Нажимая на кнопку "Отправить" вы соглашаетесь на <a href="/processing" target="_blank">обработку персональных данных</a>
+			</div>
+			<button class="btn button-form" type="submit" onclick="submitModal(this);">Отправить</button>
+			<input type="hidden" name="order-call-2">
+		</form>
+	</div>
 
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/remodal.min.js"></script>
 <script>
 	
 $(document).ready(function() {
-    var e = $(".scroll-header");
-    $(window).scroll(function() {
-        $(this).scrollTop() > 50 && e.hasClass("default") ? e.fadeOut("fast", function() {
-            $(this).removeClass("default").addClass("sticky transbg").slideDown(400)
-        }) : $(this).scrollTop() <= 50 && e.hasClass("sticky") && e.fadeOut("fast", function() {
-            $(this).removeClass("sticky transbg").addClass("default").slideDown(400)
-        })
-    }), $("#dilers").on("click", function() {
-        var e = $("#anchor_5");
-        e.hasClass("active") || e.find(".button-show").trigger("click")
-    }), $(".hide-block").hide(), $a = $(".cuption-product"), $a.on("click", function(e) {
-        e.preventDefault(), $a.not(this).next().slideUp(700), $(this).next().slideToggle(700), $(this).toggleClass("qus-open"), $a.not(this).removeClass("qus-open")
-    }), $(".button-menu").click(function(e) {
-        $(".box-main-menu").toggleClass("open"), e.stopPropagation(), e.preventDefault()
-    }), $(".close-menu").click(function() {
-        $(".box-main-menu").removeClass("open")
-    }), $("body").click(function(e) {
-        $(".box-main-menu").removeClass("open")
-    });
-    var a, t = $(".main-menu"),
-        s = t.outerHeight() + 15,
-        i = t.find("a"),
-        o = i.map(function() {
-            var e = $($(this).attr("href"));
-            if (e.length) return e
-        });
-    i.click(function(e) {
-        var a = $(this).attr("href"),
-            t = "#" === a ? 0 : $(a).offset().top - s + 1;
-        $("html, body").stop().animate({
-            scrollTop: t
-        }, 300), e.preventDefault()
-    }), $(window).scroll(function() {
-        var e = $(this).scrollTop() + s,
-            t = o.map(function() {
-                if ($(this).offset().top < e) return this
-            });
-        t = t[t.length - 1];
-        var l = t && t.length ? t[0].id : "";
-        a !== l && (a = l, i.parent().removeClass("active").end().filter("[href='#" + l + "']").parent().addClass("active"))
-    }), $(function() {
-        $("ul.tabs__caption").on("click", "li:not(.active)", function() {
-            $(this).addClass("active").siblings().removeClass("active").closest("div.tabs").find("div.tabs__content").removeClass("active").eq($(this).index()).addClass("active")
-        })
-    }), $(".blockContacts .button-open").click(function() {
-        $(".blockContacts .hide-block").slideDown(700), $(".blockContacts .block-button-open").addClass("active")
-    }), $(".blockContacts .button-close").click(function() {
-        $(".blockContacts .hide-block").slideToggle(400), $(".blockContacts .block-button-open").toggleClass("active")
-    });
+	var e = $(".scroll-header");
+	$(window).scroll(function() {
+		$(this).scrollTop() > 50 && e.hasClass("default") ? e.fadeOut("fast", function() {
+			$(this).removeClass("default").addClass("sticky transbg").slideDown(400)
+		}) : $(this).scrollTop() <= 50 && e.hasClass("sticky") && e.fadeOut("fast", function() {
+			$(this).removeClass("sticky transbg").addClass("default").slideDown(400)
+		})
+	}), $("#dilers").on("click", function() {
+		var e = $("#anchor_5");
+		e.hasClass("active") || e.find(".button-show").trigger("click")
+	}), $(".hide-block").hide(), $a = $(".cuption-product"), $a.on("click", function(e) {
+		e.preventDefault(), $a.not(this).next().slideUp(700), $(this).next().slideToggle(700), $(this).toggleClass("qus-open"), $a.not(this).removeClass("qus-open")
+	}), $(".button-menu").click(function(e) {
+		$(".box-main-menu").toggleClass("open"), e.stopPropagation(), e.preventDefault()
+	}), $(".close-menu").click(function() {
+		$(".box-main-menu").removeClass("open")
+	}), $("body").click(function(e) {
+		$(".box-main-menu").removeClass("open")
+	});
+	var a, t = $(".main-menu"),
+		s = t.outerHeight() + 15,
+		i = t.find("a"),
+		o = i.map(function() {
+			var e = $($(this).attr("href"));
+			if (e.length) return e
+		});
+	i.click(function(e) {
+		var a = $(this).attr("href"),
+			t = "#" === a ? 0 : $(a).offset().top - s + 1;
+		$("html, body").stop().animate({
+			scrollTop: t
+		}, 300), e.preventDefault()
+	}), $(window).scroll(function() {
+		var e = $(this).scrollTop() + s,
+			t = o.map(function() {
+				if ($(this).offset().top < e) return this
+			});
+		t = t[t.length - 1];
+		var l = t && t.length ? t[0].id : "";
+		a !== l && (a = l, i.parent().removeClass("active").end().filter("[href='#" + l + "']").parent().addClass("active"))
+	}), $(function() {
+		$("ul.tabs__caption").on("click", "li:not(.active)", function() {
+			$(this).addClass("active").siblings().removeClass("active").closest("div.tabs").find("div.tabs__content").removeClass("active").eq($(this).index()).addClass("active")
+		})
+	}), $(".blockContacts .button-open").click(function() {
+		$(".blockContacts .hide-block").slideDown(700), $(".blockContacts .block-button-open").addClass("active")
+	}), $(".blockContacts .button-close").click(function() {
+		$(".blockContacts .hide-block").slideToggle(400), $(".blockContacts .block-button-open").toggleClass("active")
+	});
+
+
+	// $callForm = $(".call-form");
+    // $callForm.attr("action", "ajax.php"),
 });
+
+
+function submitModal(e) {
+	var form = $('.call-form').serialize();
+	$.ajax({
+		type: "POST",
+		url: 'ajax.php',
+		data: form,
+	    success: function(e, a, t, s) {
+	        var i = JSON.parse(e),
+	        	o = $('.remodal');
+	        if("success" == i.status) {
+	        	o.find(".modal-message").text(i.message);
+	        }
+	    },
+	    complete: function() {},
+	    resetForm: !0
+	});
+}
 
 </script>
 

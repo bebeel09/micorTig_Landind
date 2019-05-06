@@ -24,6 +24,7 @@
     "imagemin-pngquant": "^7.0.0"
   },
   "dependencies": {
-    "executive": "^1.6.3"
+    "executive": "^1.6.3",
+    "remodal": "^1.1.1"
   }
 }
