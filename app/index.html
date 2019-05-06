@@ -408,6 +408,7 @@ function submitModal(e) {
 	        var i = JSON.parse(e),
 	        	o = $('.remodal');
 	        if("success" == i.status) {
+	        	$('#main-form').fadeOut(150);
 	        	o.find(".modal-message").text(i.message);
 	        }
 	    },
