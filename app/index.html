@@ -6,13 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>MicorTIG</title>
+	<link rel="shortcut icon" href="http://www.shtorm-lorch.ru/favicon.ico" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
 	<div class="body__wrapper">
-		<header class="header">
+		<header class="header scroll-header default">
 		<div class="block-one">
 			<div class="siteWidth container">
 				<div class="row">
@@ -30,7 +31,7 @@
 		</div>
 		
 		<div class="block-second hide-header">
-			<div class="scroll-header default" style="display: block;">
+			<div class="" style="display: block;">
 				<div class="siteWidth">
 					<div class="row align-items-center justify-content-between">
 						<div class="header-logo col">
@@ -44,19 +45,19 @@
 								<nav class="ankor-link">
 									<ul class="main-menu">
 										<li class="">
-											<a href="#anchor_1">О компании</a>
+											<a href="http://www.shtorm-lorch.ru/#anchor_1">О компании</a>
 										</li>
 										<li class="">
-											<a href="#anchor_2">каталог</a>
+											<a href="http://www.shtorm-lorch.ru/#anchor_2">каталог</a>
 										</li>
 										<li>
-											<a href="#anchor_3">Новости</a>
+											<a href="http://www.shtorm-lorch.ru/#anchor_3">Новости</a>
 										</li>
 										<li>
-											<a href="#anchor_4">Контакты</a>
+											<a href="http://www.shtorm-lorch.ru/#anchor_4">Контакты</a>
 										</li>
 										<li>
-											<a href="#anchor_5">Дилеры</a>
+											<a href="http://www.shtorm-lorch.ru/#anchor_5">Дилеры</a>
 										</li>
 									</ul>
 								</nav>
@@ -279,13 +280,13 @@
 						</h2>
 						<ul class="links-inline">
 							<li>
-								<a href="#modal" class="icon-wrapper">
+								<a href="" data-remodal-target="modal" class="icon-wrapper">
 									<span class="icon-copy">Оформить предзаказ сейчас <i class="fas fa-chevron-right"></i></span>
 									<span class="icon icon-after more"></span>
 								</a>
 							</li>
 							<li>
-								<a href="/" class="icon-wrapper">
+								<a href="http://shtorm-lorch.ru#anchor_2" class="icon-wrapper">
 									<span class="icon-copy">Сравнить с другими <i class="fas fa-chevron-right"></i></span>
 									<span class="icon icon-after more"></span>
 								</a>
@@ -308,7 +309,7 @@
 		</main>
 	</div>
 	<!-- <div class="helper" style="height: 800px; display: block"></div> -->
-	<div class="remodal" data-remodal-id="modal">
+	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 		<h3>Предзаказ MicorTig</h3>
 		
@@ -316,7 +317,7 @@
 		
 		<div class="modal-message"></div>
 
-		<form id="main-form" name="call-form" class="call-form">
+		<form id="main-form" name="call-form" class="call-form" novalidate="">
 			<div class="block-input">
 				<input type="text" name="name" placeholder="Имя" required="">
 			</div>
@@ -329,7 +330,7 @@
 			<div class="block-processing">
 				Нажимая на кнопку "Отправить" вы соглашаетесь на <a href="/processing" target="_blank">обработку персональных данных</a>
 			</div>
-			<button class="btn button-form" type="submit" onclick="submitModal(this);">Отправить</button>
+			<button class="btn button-form" type="submit" onclick="submitModal(this); return false;">Отправить</button>
 		</form>
 	</div>
 
@@ -398,17 +399,19 @@ $(document).ready(function() {
 
 
 function submitModal(e) {
-	e.preventDefault();
+	// e.preventDefault();
 	var form = $('.call-form').serialize();
 	$.ajax({
 		type: "POST",
-		url: 'ajax.php',
+		url: '/ajax.php',
 		data: form,
-	    done: function(e, a, t, s) {
+	    success: function(e, a, t, s) {
 	        var i = JSON.parse(e),
 	        	o = $('.remodal');
 	        if("success" == i.status) {
 	        	$('#main-form').fadeOut(150);
+	        	o.find(".modal-message").text(i.message);
+	        } else {
 	        	o.find(".modal-message").text(i.message);
 	        }
 	    },

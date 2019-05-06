@@ -151,7 +151,7 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
     flex-basis: 375px
     max-width: 375px
   .block-one
-    height: 50px
+    min-height: 50px
     color: #ffffff
     background: #494949
     .row
@@ -164,6 +164,8 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
       letter-spacing: 0.04rem
       flex-basis: 250px
       max-width: 250px
+  .block-second
+    padding: 20px 0
   &-contact
     text-align: right
     color: #ffffff
@@ -194,8 +196,8 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
   font-size: 1.1rem
   color: #fff !important
   margin-left: 50px
-.scroll-header
-  padding: 20px 0
+// .scroll-header
+//   padding: 20px 0
 .main-menu
   display: flex
   justify-content: flex-end
@@ -239,12 +241,8 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
         -webkit-transition: all 0.3s ease
         -o-transition: all 0.3s ease
 @media screen and (max-width: 767px)
-  .header .block-one .col 
-    padding-left: 0
   .header-contact .link-modal
     margin-left: 11px
-  .scroll-header 
-    padding: 15px 0
   .header-menu-col
     display: block
     flex-basis: 130px
@@ -337,7 +335,7 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
       background: transparent
     
 
-@media screen and (max-width: 595px)
+@media screen and (max-width: 440px)
 
     .header .link-email
     
@@ -345,11 +343,6 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
     
 
 @media screen and (max-width: 460px)
-
-    .header .block-one .row
-    
-        height: 42px
-        margin: 0 -10px
     
     .header-contact .block-contact
     
@@ -360,15 +353,13 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
     .header-contact
     
         text-align: center
-        padding: 0 10px
-    
     .header-contact .link-modal
     
         display: none
     
     .header .link-phone
     
-        font-size: 1.4rem
+        font-size: 1.2rem
     
     .header-contact .header-contact:nth-child(1)
     
@@ -442,18 +433,12 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
     background: #f1f1f1
     position: fixed
     top: 0
-    padding: 10px 0
+    // padding: 10px 0
     animation: thedrop 1s 1
     -moz-animation: thedrop 1s 1
     -webkit-animation: thedrop 1s 1
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3)
     z-index: 999
-
-.sticky .header-logo
-  flex-basis: 180px
-  -webkit-flex-basis: 180px
-  -ms-flex-preferred-size: 180px
-  max-width: 180px
 
 .sticky .main-menu > li > a
 
@@ -465,7 +450,7 @@ a[savefrom_lm_is_link="1"] // fix savefrom button
     bottom: 0
 .scroll-header
   width: 100%
-@media screen and (max-width: 1001px)
+@media screen and (max-width: 1020px)
   .header-logo
     -webkit-flex-basis: 300px
     -ms-flex-preferred-size: 300px

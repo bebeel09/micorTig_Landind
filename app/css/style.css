@@ -9304,7 +9304,7 @@ a[savefrom_lm_is_link="1"] {
             flex-basis: 375px;
     max-width: 375px; }
   .header .block-one {
-    height: 50px;
+    min-height: 50px;
     color: #ffffff;
     background: #494949; }
     .header .block-one .row {
@@ -9325,6 +9325,8 @@ a[savefrom_lm_is_link="1"] {
           -ms-flex-preferred-size: 250px;
               flex-basis: 250px;
       max-width: 250px; }
+  .header .block-second {
+    padding: 20px 0; }
   .header-contact {
     text-align: right;
     color: #ffffff; }
@@ -9366,9 +9368,6 @@ a[savefrom_lm_is_link="1"] {
   font-size: 1.1rem;
   color: #fff !important;
   margin-left: 50px; }
-
-.scroll-header {
-  padding: 20px 0; }
 
 .main-menu {
   display: -webkit-box;
@@ -9420,12 +9419,8 @@ a[savefrom_lm_is_link="1"] {
         -o-transition: all 0.3s ease; }
 
 @media screen and (max-width: 767px) {
-  .header .block-one .col {
-    padding-left: 0; }
   .header-contact .link-modal {
     margin-left: 11px; }
-  .scroll-header {
-    padding: 15px 0; }
   .header-menu-col {
     display: block;
     flex-basis: 130px;
@@ -9504,26 +9499,22 @@ a[savefrom_lm_is_link="1"] {
   .main-menu > li:hover > a, .main-menu > li.active > a {
     background: transparent; } }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 440px) {
   .header .link-email {
     display: none; } }
 
 @media screen and (max-width: 460px) {
-  .header .block-one .row {
-    height: 42px;
-    margin: 0 -10px; }
   .header-contact .block-contact {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     -webkit-box-pack: center;
             justify-content: center; }
   .header-contact {
-    text-align: center;
-    padding: 0 10px; }
+    text-align: center; }
   .header-contact .link-modal {
     display: none; }
   .header .link-phone {
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   .header-contact .header-contact:nth-child(1) {
     padding-right: 9px; }
   .header-contact .header-contact:nth-child(2) {
@@ -9586,19 +9577,12 @@ a[savefrom_lm_is_link="1"] {
   background: #f1f1f1;
   position: fixed;
   top: 0;
-  padding: 10px 0;
   animation: thedrop 1s 1;
   -moz-animation: thedrop 1s 1;
   -webkit-animation: thedrop 1s 1;
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   z-index: 999; }
-
-.sticky .header-logo {
-  flex-basis: 180px;
-  -webkit-flex-basis: 180px;
-  -ms-flex-preferred-size: 180px;
-  max-width: 180px; }
 
 .sticky .main-menu > li > a {
   font-size: 1rem;
@@ -9610,7 +9594,7 @@ a[savefrom_lm_is_link="1"] {
 .scroll-header {
   width: 100%; }
 
-@media screen and (max-width: 1001px) {
+@media screen and (max-width: 1020px) {
   .header-logo {
     -webkit-flex-basis: 300px;
     -ms-flex-preferred-size: 300px;
