@@ -316,9 +316,9 @@
 		
 		<div class="modal-message"></div>
 
-		<form id="main-form" name="call-form" class="call-form" novalidate="novalidate">
+		<form id="main-form" name="call-form" class="call-form">
 			<div class="block-input">
-				<input type="text" name="name" placeholder="Имя">
+				<input type="text" name="name" placeholder="Имя" required="">
 			</div>
 			<div class="block-input">
 				<input type="text" class="user-phone" name="phone" placeholder="Телефон" required="" aria-required="true">
@@ -330,7 +330,6 @@
 				Нажимая на кнопку "Отправить" вы соглашаетесь на <a href="/processing" target="_blank">обработку персональных данных</a>
 			</div>
 			<button class="btn button-form" type="submit" onclick="submitModal(this);">Отправить</button>
-			<input type="hidden" name="order-call-2">
 		</form>
 	</div>
 
@@ -399,12 +398,13 @@ $(document).ready(function() {
 
 
 function submitModal(e) {
+	e.preventDefault();
 	var form = $('.call-form').serialize();
 	$.ajax({
 		type: "POST",
 		url: 'ajax.php',
 		data: form,
-	    success: function(e, a, t, s) {
+	    done: function(e, a, t, s) {
 	        var i = JSON.parse(e),
 	        	o = $('.remodal');
 	        if("success" == i.status) {
@@ -412,8 +412,8 @@ function submitModal(e) {
 	        	o.find(".modal-message").text(i.message);
 	        }
 	    },
-	    complete: function() {},
-	    resetForm: !0
+	    // complete: function() {},
+	    // resetForm: !0
 	});
 }
 
